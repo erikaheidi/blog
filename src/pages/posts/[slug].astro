@@ -1,0 +1,107 @@
+---
+import type { GetStaticPaths } from 'astro'
+import Layout from '@layouts/Layout.astro'
+import { getSortedPosts } from '@utils'
+import PostPreview from '@components/PostPreview.astro'
+import DividerText from '@components/DividerText.astro'
+import { getCollection, render } from 'astro:content'
+import PostAddendum from '@components/PostAddendum.astro'
+import TableOfContents from '@components/TableOfContents.astro'
+import { Image } from 'astro:assets'
+import GiscusLoader from '@components/GiscusLoader.astro'
+import siteConfig from '../../site.config'
+import Tags from '@components/Tags.astro'
+import PostInfo from '@components/PostInfo.astro'
+import ScrollUpButton from '@components/ScrollUpButton.astro'
+
+export const getStaticPaths = (async () => {
+  const posts = await getSortedPosts()
+  return posts.map((post, index) => {
+    const validPrev = index > 0
+    const validNext = index < posts.length - 1
+    const prev = validPrev ? posts[index - 1] : undefined
+    const next = validNext ? posts[index + 1] : undefined
+    return {
+      params: { slug: post.id },
+      props: { post, prev, next },
+    }
+  })
+}) satisfies GetStaticPaths
+
+const { post, prev, next } = Astro.props
+const postData = post.data
+const { headings, Content: PostContent } = await render(post)
+const addendum = await getCollection('addendum')
+let AddendumContent
+let addendumAvatarImage
+if (addendum.length > 0) {
+  const addendumEntry = addendum[0]
+  const { Content } = await render(addendumEntry)
+  AddendumContent = Content
+  addendumAvatarImage = addendumEntry.data.avatarImage
+}
+---
+
+<Layout
+  title={postData.title}
+  description={postData.description}
+  author={postData.author}
+  tags={postData.tags}
+>
+  <article class="max-w-full py-7.5" data-pagefind-body>
+    {
+      postData.coverImage && (
+        <Image
+          src={postData.coverImage.src}
+          alt={postData.coverImage.alt}
+          width={postData.coverImage.src.width}
+          height={postData.coverImage.src.height}
+          inferSize={true}
+          class="w-full rounded-xl mb-5"
+        />
+      )
+    }
+    <div class="md:mx-2">
+      <h1 class="mb-4 text-[1.75rem] text-[var(--theme-h1)] font-semibold">
+        # {postData.title}
+      </h1>
+      <div class="my-2 border-l-2 border-accent/80 pl-4 py-2">
+        <PostInfo post={post} class="mb-1" />
+        {
+          postData.tags && (
+            <div class="mt-4">
+              <Tags tags={postData.tags} />
+            </div>
+          )
+        }
+      </div>
+    </div>
+    <!-- <hr class="border-accent/10 border-2 rounded-xl hidden lg:block" /> -->
+    <div class="flex flex-col xl:gap-4 2xl:gap-18 xl:flex-row xl:items-start">
+      {postData.toc && headings.length > 0 && <TableOfContents headings={headings} />}
+      <div class="mb-5 xl:min-w-full 2xl:min-w-full prose">
+        <PostContent />
+      </div>
+    </div>
+  </article>
+  <div class="article-end-marker" aria-hidden="true"></div>
+  {
+    AddendumContent && (
+      <PostAddendum avatarImage={addendumAvatarImage}>
+        <AddendumContent />
+      </PostAddendum>
+    )
+  }
+  {(prev || next) && <DividerText text="More Posts" />}
+  {prev && <PostPreview post={prev} />}
+  {next && <PostPreview post={next} />}
+  {
+    siteConfig.giscus && (
+      <>
+        <DividerText text="Comments" />
+        <GiscusLoader />
+      </>
+    )
+  }
+  <ScrollUpButton />
+</Layout>

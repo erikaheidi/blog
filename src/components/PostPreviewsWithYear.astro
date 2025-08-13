@@ -1,0 +1,33 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import PostPreview from './PostPreview.astro'
+
+interface Props {
+  posts: CollectionEntry<'posts'>[]
+  yearMarkers?: boolean
+  class?: string
+}
+
+const { posts, yearMarkers, class: className } = Astro.props
+let currentYear = 0
+---
+
+<div class={className}>
+  {
+    posts.map((post) => {
+      const yearPublished = post.data.published.getFullYear()
+      if (yearMarkers && yearPublished !== currentYear) {
+        currentYear = yearPublished
+        return (
+          <>
+            <div class="text-2xl pb-3 my-7 text-foreground/50 border-b-4 border-dotted border-foreground/20">
+              {yearPublished}
+            </div>
+            <PostPreview post={post} />
+          </>
+        )
+      }
+      return <PostPreview post={post} />
+    })
+  }
+</div>

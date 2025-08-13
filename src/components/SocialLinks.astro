@@ -1,0 +1,99 @@
+---
+import type { SocialLinks } from '@types'
+import { Icon } from 'astro-icon/components'
+
+interface Props {
+  socialLinks: SocialLinks
+}
+
+const { socialLinks } = Astro.props
+---
+
+<div class="flex w-full max-w-md items-center justify-between">
+  {
+    socialLinks.github && (
+      <a
+        href={socialLinks.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link"
+      >
+        <span class="sr-only">GitHub</span>
+        <Icon name="github" class="size-7" />
+      </a>
+    )
+  }
+  {
+    socialLinks.mastodon && (
+      <a
+        href={socialLinks.mastodon}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link"
+      >
+        <span class="sr-only">Mastodon</span>
+        <Icon name="mastodon" class="size-7" />
+      </a>
+    )
+  }
+  {
+    socialLinks.twitter && (
+      <a
+        href={socialLinks.twitter}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link"
+      >
+        <span class="sr-only">Twitter</span>
+        <Icon name="twitter" class="size-7" />
+      </a>
+    )
+  }
+  {
+    socialLinks.linkedin && (
+      <a
+        href={socialLinks.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link"
+      >
+        <span class="sr-only">LinkedIn</span>
+        <Icon name="linkedin" class="size-7" />
+      </a>
+    )
+  }
+  {
+    socialLinks.bluesky && (
+      <a
+        href={socialLinks.bluesky}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link"
+      >
+        <span class="sr-only">Bluesky</span>
+        <Icon name="bluesky" class="size-7" />
+      </a>
+    )
+  }
+  {
+    socialLinks.email && (
+      <a
+        href={`mailto:${socialLinks.email}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link"
+      >
+        <span class="sr-only">Email</span>
+        <Icon name="email" class="size-7" />
+      </a>
+    )
+  }
+  {
+    socialLinks.rss && (
+      <a href="/rss.xml" class="social-link">
+        <span class="sr-only">RSS</span>
+        <Icon name="rss" class="size-7" />
+      </a>
+    )
+  }
+</div>

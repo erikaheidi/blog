@@ -1,0 +1,42 @@
+---
+import { Icon } from 'astro-icon/components'
+
+interface Props {
+  prevLink?: string
+  prevText?: string
+  nextLink?: string
+  nextText?: string
+}
+
+const { prevLink, prevText, nextLink, nextText } = Astro.props
+---
+
+<div class="my-5 flex flex-row flex-wrap gap-3 justify-center">
+  {
+    prevLink && (
+      <a
+        href={prevLink}
+        aria-label="Previous Page"
+        class="button flex-row items-center justify-center w-full sm:w-min"
+      >
+        <Icon name="chevrons-left" class="mr-2 text-xl" />
+        {prevText || 'Previous'}
+      </a>
+    )
+  }
+  {
+    nextLink && (
+      <a
+        href={nextLink}
+        aria-label="Next Page"
+        class:list={[
+          'button flex-row items-center justify-center w-full sm:w-min',
+          prevLink && 'ml-auto',
+        ]}
+      >
+        {nextText || 'Next'}
+        <Icon name="chevrons-right" class="ml-2 text-xl" />
+      </a>
+    )
+  }
+</div>
