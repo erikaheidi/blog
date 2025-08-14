@@ -88,4 +88,18 @@ export default defineConfig({
   experimental: {
     contentIntellisense: true,
   },
+  redirects: {
+    "/minecraft/introduction-for-busy-grownups": "/posts/minecraft-introduction-for-busy-grownups",
+    "/productivity/20240311_setting-up-obsidian-for-content-planning-and-project-management": "/posts/setting-up-obsidian-for-content-planning-and-project-management",
+    "/onepagers/docker-basics-onepager": "/posts/docker-basics-onepager",
+    "/3d-printing/20231101_introduction-to-3d-printing": "/posts/introduction-to-3d-printing",
+    "/3d-printing/20231109_freecad-for-beginners": "/posts/freecad-for-beginners",
+    "/3d-printing/20231109_from-svg-to-3dprinted-with-freecad": "/posts/from-svg-to-3dprinted-with-freecad",
+    "/linux/20230523_installing-ohmyzsh-ubuntu2304": "/posts/installing-ohmyzsh-ubuntu",
+    "/tech-writing/20221212_documentation-101": "/posts/documentation-101",
+    "/tech-writing/20221216_setting-up-a-documentation-site": "/posts/setting-up-a-documentation-site",
+    "/tech-writing/20221220_information-architecture": "/posts/information-architecture",
+    "/about/erika": "/about",
+    "/blog": "/posts"
+  }
 })
