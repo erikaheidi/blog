@@ -7,7 +7,7 @@ const config: SiteConfig = {
   title: 'eheidi.dev',
   // The description of your site, used for SEO and RSS feed.
   description:
-    'A coder-ready Astro blog theme with 59 of your favorite color schemes to choose from',
+    'A personal blog about technology, 3D printing, technical writing, and some gaming.',
   // The author of the site, used in the footer, SEO, and RSS feed.
   author: 'Erika Heidi',
   // Keywords for SEO, used in the meta tags.
