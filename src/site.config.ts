@@ -44,80 +44,18 @@ const config: SiteConfig = {
   // The theming configuration for the site.
   themes: {
     // The theming mode. One of "single" | "select" | "light-dark-auto".
-    mode: 'select',
+    mode: 'light-dark-auto',
     // The default theme identifier, used when themeMode is "select" or "light-dark-auto".
     // Make sure this is one of the themes listed in `themes` or "auto" for "light-dark-auto" mode.
-    default: 'catppuccin-mocha',
+    default: 'auto',
     // Shiki themes to bundle with the site.
     // https://expressive-code.com/guides/themes/#using-bundled-themes
     // These will be used to theme the entire site along with syntax highlighting.
     // To use light-dark-auto mode, only include a light and a dark theme in that order.
-    // include: [
-    //   'github-light',
-    //   'github-dark',
-    // ]
-    include: [
-      'andromeeda',
-      'aurora-x',
-      'ayu-dark',
-      'catppuccin-frappe',
-      'catppuccin-latte',
-      'catppuccin-macchiato',
-      'catppuccin-mocha',
-      'dark-plus',
-      'dracula',
-      'dracula-soft',
-      'everforest-dark',
-      'everforest-light',
-      'github-dark',
-      'github-dark-default',
-      'github-dark-dimmed',
-      'github-dark-high-contrast',
-      'github-light',
-      'github-light-default',
-      'github-light-high-contrast',
-      'gruvbox-dark-hard',
-      'gruvbox-dark-medium',
-      'gruvbox-dark-soft',
-      'gruvbox-light-hard',
-      'gruvbox-light-medium',
-      'gruvbox-light-soft',
-      'houston',
-      'kanagawa-dragon',
-      'kanagawa-lotus',
-      'kanagawa-wave',
-      'laserwave',
-      'light-plus',
-      'material-theme',
-      'material-theme-darker',
-      'material-theme-lighter',
-      'material-theme-ocean',
-      'material-theme-palenight',
-      'min-dark',
-      'min-light',
-      'monokai',
-      'night-owl',
-      'nord',
-      'one-dark-pro',
-      'one-light',
-      'plastic',
-      'poimandres',
-      'red',
-      'rose-pine',
-      'rose-pine-dawn',
-      'rose-pine-moon',
-      'slack-dark',
-      'slack-ochin',
-      'snazzy-light',
-      'solarized-dark',
-      'solarized-light',
-      'synthwave-84',
-      'tokyo-night',
-      'vesper',
-      'vitesse-black',
-      'vitesse-dark',
-      'vitesse-light',
-    ],
+     include: [
+       'catppuccin-latte',
+       'catppuccin-macchiato',
+   ]
   },
   // Social links to display in the footer.
   socialLinks: {
