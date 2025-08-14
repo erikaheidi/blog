@@ -1,0 +1,6 @@
+[[headers]]
+  for = "/giscus/*.css" 
+  [headers.values]
+    access-control-allow-origin = "*"
+
+
