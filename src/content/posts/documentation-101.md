@@ -2,7 +2,7 @@
 title: 'Documentation 101: creating a good README for your software project'
 published: 2023-01-01
 description: "In this article, which is part 1 of a series on how to write good documentation, we'll see some tips to write a good README file for your project."
-tags: [ 'technical writing', 'beginners' ]
+tags: [ 'technical-writing' ]
 ---
 
 Having a good documentation for your open source project is an important (and often overlooked) feature to drive adoption and show the full potential of what users can accomplish with your application or library.

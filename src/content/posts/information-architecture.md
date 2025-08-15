@@ -2,7 +2,7 @@
 title: 'Information Architecture and Content Planning for Documentation Websites'
 published: 2023-01-15
 description: "In this post we'll learn about information architecture in the context of documentation websites and see tips to get your docs organized."
-tags: [ 'technical writing' ]
+tags: [ 'technical-writing' ]
 ---
 
 In a [previous article in this series](/tech-writing/20221216_setting-up-a-documentation-site), we've seen how to set up a dedicated documentation website with Hugo, and how to host it for free on Netlify. Now you may be asking yourself what is the best way to organize your documentation so that users can make the best out of it and are able to find what they need more easily.

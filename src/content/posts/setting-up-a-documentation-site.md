@@ -2,7 +2,7 @@
 title: 'Setting up a Documentation Website for your Software Project with Hugo and Netlify'
 published: 2023-01-10
 description: "In the second part of our series, we'll see how to set up a dedicated documentation website for your software project using the Hugo static site generator, and having it hosted for free on Netlify."
-tags: [ 'technical writing' , 'beginners' ]
+tags: [ 'technical-writing' , 'beginners' ]
 ---
 
 ## Introduction
