@@ -93,4 +93,4 @@ To save a model as an STL file that you can slice and print with a 3D printer, y
 
 ## Next Steps
 
-You learned the basics of how to navigate FreeCAD's interface, how to move between workbenches, and how to create a simple solid in the Part design and export the STL mesh for 3D printing. In the next post of this series, you'll learn how to create a simple pen holder using FreeCAD's Part Design and Sketcher workbenches. In the meanwhile, check out [FreeCAD wiki](https://wiki.freecad.org/Main_Page) in case you want to learn more about this tool.
+You learned the basics of how to navigate FreeCAD's interface, how to move between workbenches, and how to create a simple solid in the Part design and export the STL mesh for 3D printing. In the next post of this series, you'll learn [how to create a simple pen holder using FreeCAD's Part Design and Sketcher workbenches](/posts/freecad-tutorial-penholder). Check also the [FreeCAD wiki](https://wiki.freecad.org/Main_Page) in case you want to learn more about FreeCAD.
