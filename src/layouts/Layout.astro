@@ -145,6 +145,11 @@ let generatedCss: string = cssLines.join('\n')
     <style is:inline set:html={generatedCss}></style>
     {themeMode === 'light-dark-auto' && <LightDarkAutoThemeLoader />}
     {themeMode === 'select' && <SelectThemeLoader />}
+
+    <script defer data-domain="eheidi.dev" src="https://plausible.io/js/script.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
+
   </head>
   <body class="w-full h-full m-0 bg-background text-foreground">
     <div
