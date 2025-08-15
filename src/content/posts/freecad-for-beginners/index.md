@@ -1,8 +1,8 @@
 ---
 title: "FreeCAD 1.0 for Beginners"
-published: 2025-08-15
+published: 2025-08-14
 description: "In this introduction to 3D design with FreeCAD 1.0, learn how to navigate the interface and use the Part Design workbench to create a simple pen holder for 3D printing."
-tags: [ '3d printing', 'tutorial', 'freecad' ]
+tags: [ '3d-printing', 'tutorial', 'freecad' ]
 coverImage: 
     src: 'https://cdn.erikaheidi.com/3dprinting/freecad-for-beginners.png'
     alt: 'banner'

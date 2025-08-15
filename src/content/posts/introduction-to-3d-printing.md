@@ -5,7 +5,7 @@ description: '3D printing refers to a variety of processes in which a computer-o
 coverImage: 
     src: 'https://cdn.erikaheidi.com/3dprinting/introduction.png'
     alt: 'Banner'
-tags: [ '3d printing', 'openscad' ]
+tags: [ '3d-printing', 'openscad' ]
 ---
 
 ## Introduction

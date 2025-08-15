@@ -2,7 +2,7 @@
 title: From SVG to 3D Printed with Inkscape and FreeCAD
 published: 2023-11-20
 description: "Learn how to import an SVG file on FreeCAD and turn it into a solid shape that can be 3D printed"
-tags: [ '3d printing' , 'tutorial' ]
+tags: [ '3d-printing' , 'tutorial' ]
 coverImage: 
     src: 'https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pnkf6fgdbn3mulsst28f.png'
     alt: 'banner'
