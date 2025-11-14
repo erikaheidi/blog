@@ -28,7 +28,7 @@ FDM stands for [Fused Deposition Modeling](https://en.wikipedia.org/wiki/Fused_f
 
 It is a slow process, but the results can be quite impressive. The following timelapse gives a better idea of how it works. This print took about 20 hours to complete on the Prusa MK3S:
 
-{% youtube GVxVYZv7oM8 %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GVxVYZv7oM8?si=XV-p5EKncwm_3Pua" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Choosing a 3D Printer
 
@@ -60,7 +60,7 @@ Other materials include flexible filament, copper-infused (also other metals), c
 
 To create original models, you can use a 3D modeling software - there are many to choose from. The following timelapse shows me using Freecad to design a simple shapes toy for my girl:
 
-{% youtube pIEu5Qta91w %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pIEu5Qta91w?si=J0_Ial2nLcKWlVx1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 Even more exciting is to use **code** to create 3D models. You can do that with [OpenScad](https://www.openscad.org/), an open source platform for creating solid 3D models through code. This enables you to create customizable 3D objects!
