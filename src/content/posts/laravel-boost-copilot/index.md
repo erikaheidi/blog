@@ -23,7 +23,11 @@ I also defined the most important features I wanted in my karaoke app:
 - A way for players to join a single session together and interact
 - A way for players to add songs to the queue
 
-In this post, I will share my experience in the past week building this app. Is it really possible to develop an app like this in such a short timeline? 
+In this post, I will share my experience in the past week building this app. Is it really possible to develop an app like this in such a short timeline? The TL;DR is: yes, if you kinda know what you're doing.
+
+I made this silly video to show off:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9hURUE1K9Fk?si=zZrFgAAMILc-l_0K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Phase 1: Off to a Bumpy Start
 
@@ -75,6 +79,7 @@ While Laravel Reverb has made a big difference in the overall development proces
 Today, at the one week mark, I have about 80% of the application ready. Broadcasting is working, I can manage Songs and Tags from the dashboard, the player is working with auto-forward and all, the queue is working with songs added by different users, and there is a companion mode to join the session from a mobile phone. Of course, there are some rough edges to smooth out, front-end adjustments, and a few other details. But the bulk of it is already working, which is great! I am very surprised by this experience, I did not think it would go the way it went. 
 
 ![Sing With Me preview](singwithme.png)
+
 
 With regards to AI assisted coding, my key takeaways are:
 
