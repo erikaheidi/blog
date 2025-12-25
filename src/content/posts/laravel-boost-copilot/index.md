@@ -1,7 +1,7 @@
 ---
-title: 'Building a Karaoke App with Laravel Boost and Copilot: One Week Progress'
+title: 'Building a Karaoke App with Laravel Boost and Copilot'
 published: 2025-12-13
-description: 'In this post I share my experience building an app with an impossible deadline, using Laravel Boost and Copilot'
+description: 'In this post I share my experience building an app with an impossible deadline, using Laravel Boost and Copilot. I will keep upating this post as I make progress in the project.'
 coverImage: 
     src: 'build-app-copilot.png'
     alt: 'Banner'
@@ -92,3 +92,8 @@ With regards to AI assisted coding, my key takeaways are:
 
 I'll be sharing another update after we test-drive the app! :) 
 
+## 2-Week Update (Dec 23)
+
+It's almost Christmas and I had some progress I wanted to share, as well as my honest opinion about the models I have tried (Claude Opus and GPT Codex Max) so I recorded this video update. TL;DR: there are still some things to fix, and I had some issues with the Reverb server on Laravel Cloud, but things are progressing as I just finished setting up a better development environment using Docker Compose. I also need to improve the process for adding new songs, making song curation easier.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e-G3_OD8SKU?si=w0WlTCZwYppDleLz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
