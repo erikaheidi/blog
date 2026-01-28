@@ -2,6 +2,9 @@
 title: 'Use the Right Tool for the Job and your Skillset'
 published: 2026-01-28
 description: 'Let me tell yall the story of how I sabotaged myself (and my own progress) by insisting on using a tool that was not the right choice for me. '
+coverImage: 
+    src: 'climbing-shoes.png'
+    alt: 'Banner'
 tags: [ 'career', 'development' ]
 ---
 
@@ -15,6 +18,8 @@ Bouldering in general requires the use of special shoes. Climbing shoes are know
 
 And that was fine. My first pair was two sizes bigger and it was good for a long time! I was progressing. 
 
+![The image shows an indoor climbing wall with colored boulders. I stand on top of two big blue holds while holding with both hands a big blue holder that is the end of that route. The routes have different numbers, and the one I am finishing is a 5.](climbing.jpg)
+
 Fast-forward to some 6 months later, my right shoe now had a hole in the tip, and it was very slippery. It was time to go for my *second* pair of climbing shoes.
 
 And that's when the problems started. Because I had progressed a lot in that period, I thought I was ready for "the next step", getting a shoe slightly smaller for better performance. I believed that was the next logical step in my climbing progress. I did my research, and I bought a new pair that was size 40 (my regular size is 39, EUR size). My first pair was 41.
@@ -24,6 +29,9 @@ At first I was impressed because the new shoes were really good! Perfect grip, g
 Eventually I realized I wasn't ready for the damn good climbing shoes and I should just go a step back to my beginner shoes. Even with a hole in one of them, I was able to climb so much better! So I got yet another pair of climbing shoes, this time a bigger size (back to 41) and with laces, so that I could tie them well and make them adapt to my weird, wide feet. 
 
 And just as expected, I started progressing again. 
+
+![Both shoes compared - the blue and black shoe is the extra tight MF and the white and black one is my new pair that I love.](shoes-compared.jpg)
+_I think it is clear who is who in this picture, right? The white and black one is my new favorite!_
 
 Don't let yourself be influenced by all the hype out there; give yourself the space to grow and learn at a pace that is not too comfortable but also not too aggressive that will burn you out. As a beginner you may feel tempted to skip steps in order to progress faster, but that will cause other foundational issues that you can't predict. Keep the pace, ignore the FOMO, choose the right tools for you and don't get fooled by a damn good pair of unbearably tight shoes 😄
 
