@@ -1,7 +1,7 @@
 ---
 title: 'Use the Right Tool for the Job and your Skillset'
 published: 2026-01-28
-description: 'Let me tell y'all the story of how I sabotaged myself (and my own progress) by insisting on using a tool that was not the right choice for me. '
+description: 'Let me tell yall the story of how I sabotaged myself (and my own progress) by insisting on using a tool that was not the right choice for me. '
 tags: [ 'career', 'development' ]
 ---
 
