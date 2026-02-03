@@ -7,7 +7,7 @@ tags: [ 'career', 'ai' ]
 
 I have been asking this question a lot lately: is it really an ego issue? Why using AI tools give me this uncomfortable feeling, even when I like the result?
 
-First of all, I am not anti-AI, and I am actively using it today for my work and even for [side projects](http://localhost:4321/posts/laravel-boost-copilot). I am not saying it is not useful, and I am not going into the ethical or environmental issues of AI usage. It is not in the scope of this rant.
+First of all, I am not anti-AI, and I am actively using it today for my work and even for [side projects](https://eheidi.dev/posts/laravel-boost-copilot). I am not saying it is not useful, and I am not going into the ethical or environmental issues of AI usage. It is not in the scope of this rant.
 
 I am talking about personal feelings and career goals.
 
