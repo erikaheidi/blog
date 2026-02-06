@@ -17,7 +17,6 @@ In this tutorial, we'll cover:
 - How to reference spreadsheet values in your sketches using formulas
 - How to create dynamic constraints that update automatically
 - Best practices for creating parametric designs with proper thickness calculations
-- How to add fillets that adapt to your design parameters
 
 <iframe width="100%" height="540" src="https://www.youtube.com/embed/pwbyAbR-mwE?si=Cf-jQJ0g3tb6uqCP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
