@@ -7,6 +7,9 @@ tags: [ 'career', 'ai' ]
 
 When I started working in tech some 20+ years ago, I lived in a small town and it was common to join companies where you'd be the sole developer, doing everything from back to front in order to get a website up and running. I wasn't very good with the front end, and eventually I joined a marketing agency with more developers, so I could focus on the back end. Nevertheless, I started learning from my colleagues, and eventually I built my first side project monetized by Google Adsense, which let me quit that job, pay for my college and basic expenses, and bootstrap my way out of Brazil with my partner.
 
+![Screenshot from Wayback Machine showing my first side project called "semfrescura.net"](my-first-side-project.png)
+_My first side project was a mix of community and online photo editing using PHP, GD and Imagemagick_
+
 At my first job in The Netherlands I was also a generalist. I was given the freedom to create a project  from scratch and get it to production, working both on the front end as well as the back end. By this time we already had Twitter Bootstrap, so it was much easier to deal with CSS hell and get a base layout you could build out from.
 
 Then, I attended my first international conference - it was the Dutch PHP Conference (DPC) in Amsterdam. I met several folks from the PHP community, and I was fascinated by all the talks I watched. Suddenly, I felt like being a generalist was a mistake; looking at all those talented speakers presenting on complicated topics as subject experts, I thought this was what I wanted for me. I wanted to be like them.
@@ -14,6 +17,9 @@ Then, I attended my first international conference - it was the Dutch PHP Confer
 There was an issue though. I always had a hard time to focus on a single thing. I've always been that person with a million interests, several hobbies and unfinished projects. Studying was very hard if I didn't have a special interest I could apply. I could read ten books but I wouldn't really absorb anything if I couldn't try that in practice, and I wouldn't have enough motivation if I couldn't make it fun in some way. Maybe this was a "learning hack" I naturally developed since I was a kid. Truth is that this methodology was indeed helpful whenever I had to learn something, but most of the times I would learn things organically because I started a little side project in the first place.
 
 While I was able to find a niche topic to focus and talk about (Vagrant, Ansible were my main topics during those years), I remained a generalist by heart. Life is too short to keep doing the same thing over and over! Doing different things and learning a bit about lots of stuff is what makes me happy. I sense I can always fill in the gaps if I really need to. My creativity takes me to lots of different places, and I like that.
+
+![Picture showing me in 2015 with a vibrant pink/red short hair holding a book in front of me, covering part of my face. The book has a bright yellow cover and has the title "Vagrant Cookbook" with black and blue thick letters, and a cupcake illustration.](vagrant-cookbook.jpg)
+_Me in 2015 holding a printed copy of my self-published book, Vagrant Cookbook_
 
 I also sometimes thought  about who would be in better position in a post apocalyptic scenario, or if stranded on an island, or if something really bad happened to the world or the tech industry 😅 for me, being a generalist was always the safest bet. 
 
