@@ -1,0 +1,24 @@
+---
+title: 'How being a generalist is paying off in 2026'
+published: 2026-02-11
+description: 'Reflecting on how being a tech generalist has become increasingly valuable in the age of AI, from my early days as a solo developer to successfully executing modern projects with AI assistance.'
+tags: [ 'career', 'ai' ]
+---
+
+When I started working in tech some 20+ years ago, I lived in a small town and it was common to join companies where you'd be the sole developer, doing everything from back to front in order to get a website up and running. I wasn't very good with the front end, and eventually I joined a marketing agency with more developers, so I could focus on the back end. Nevertheless, I started learning from my colleagues, and eventually I built my first side project monetized by Google Adsense, which let me quit that job, pay for my college and basic expenses, and bootstrap my way out of Brazil with my partner.
+
+At my first job in The Netherlands I was also a generalist. I was given the freedom to create a project  from scratch and get it to production, working both on the front end as well as the back end. By this time we already had Twitter Bootstrap, so it was much easier to deal with CSS hell and get a base layout you could build out from.
+
+Then, I attended my first international conference - it was the Dutch PHP Conference (DPC) in Amsterdam. I met several folks from the PHP community, and I was fascinated by all the talks I watched. Suddenly, I felt like being a generalist was a mistake; looking at all those talented speakers presenting on complicated topics as subject experts, I thought this was what I wanted for me. I wanted to be like them.
+
+There was an issue though. I always had a hard time to focus on a single thing. I've always been that person with a million interests, several hobbies and unfinished projects. Studying was very hard if I didn't have a special interest I could apply. I could read ten books but I wouldn't really absorb anything if I couldn't try that in practice, and I wouldn't have enough motivation if I couldn't make it fun in some way. Maybe this was a "learning hack" I naturally developed since I was a kid. Truth is that this methodology was indeed helpful whenever I had to learn something, but most of the times I would learn things organically because I started a little side project in the first place.
+
+While I was able to find a niche topic to focus and talk about (Vagrant, Ansible were my main topics during those years), I remained a generalist by heart. Life is too short to keep doing the same thing over and over! Doing different things and learning a bit about lots of stuff is what makes me happy. I sense I can always fill in the gaps if I really need to. My creativity takes me to lots of different places, and I like that.
+
+I also sometimes thought  about who would be in better position in a post apocalyptic scenario, or if stranded on an island, or if something really bad happened to the world or the tech industry 😅 for me, being a generalist was always the safest bet. 
+
+Fast-forward to 2026. All we hear and read about is AI - it will take our jobs, it will change the Industry forever, it will turn anyone into a developer. As much as I don't believe that it will take our jobs or that it will turn anyone into a developer, today I *do* believe it will change our Industry forever. It's hard to predict how this change will materialize in one or two years, but the shift is clear and already happening.
+
+Being a tech generalist in 2026 is already paying off for me. I was able to execute a work project from start to finish all by myself in a couple weeks, from zero to deployed to GCP (something I haven't done before) with advanced features that would take me months to accomplish without the help of a coding agent. I trust the output because I know the stack well enough, and thanks to my generalist background I was able to understand everything going under the hook and even learned a bunch of new tricks along the way. Not to say that it was trivial or that I didn't get stressed out by Claude sometimes, but the coding agent has unlimited stamina and motivation. It just keeps going until it works, something I personally have trouble with. 
+
+I know I might disappoint a few friends by telling all this, but the change is already here, and we must find a way to adapt. AI won't take our jobs, but it is not going anywhere. It is important to find a way to navigate this new world, and if you are a creative generalist like me, you may even enjoy it. The question I often ask myself now is what really makes me happy about code. Is doing things the hard way what makes us proud? I am still figuring that out, and a bunch of other things, but what I really wanted to say is: yes, being a generalist is (finally?) paying off.
