@@ -68,7 +68,7 @@ To make sure the arcs stay in place, we need to constrain their centers to the X
 
 Repeat the same process for the right arc's center point.
 
-Now the sketch should be more stable, with only one degree of freedom remaining.
+Now the sketch should be fully constrained, but it's not finished yet: the wires are open. We'll close it next with the bottom part of the heart.
 
 ## Step 5: Create the Bottom Arc
 
