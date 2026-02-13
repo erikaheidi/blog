@@ -5,6 +5,7 @@
 This is a personal blog built with **Astro 5** and **TypeScript**, featuring a terminal-inspired design. The blog focuses on technology, 3D printing, technical writing, and gaming content. The site is deployed to GitHub Pages via GitHub Actions.
 
 **Key Technologies:**
+
 - Astro 5.16+ (Static Site Generator)
 - TypeScript 5.8+
 - Tailwind CSS 4 (via Vite plugin)
@@ -50,12 +51,14 @@ This is a personal blog built with **Astro 5** and **TypeScript**, featuring a t
 **Always use these exact commands in this order:**
 
 ### Development
+
 ```bash
 npm install              # Install dependencies (always run first)
 npm run dev              # Start dev server at http://localhost:4321
 ```
 
 ### Production Build
+
 ```bash
 npm run build            # Build for production (outputs to dist/)
 npm run postbuild        # Build Pagefind search index (runs automatically after build)
@@ -63,11 +66,13 @@ npm run preview          # Preview production build locally
 ```
 
 ### Formatting
+
 ```bash
 npm run format           # Format all files with Prettier
 ```
 
 **Important:**
+
 - Always run `npm install` before building or running dev server
 - The build process has two steps: `astro build` followed by `pagefind --site dist` (handled automatically via postbuild script)
 - Pagefind is required for search functionality; it must run after the Astro build completes
@@ -75,6 +80,7 @@ npm run format           # Format all files with Prettier
 ## Content Management
 
 ### Blog Posts
+
 - Location: `src/content/posts/`
 - Format: Markdown (`.md`) or MDX (`.mdx`)
 - Can be in subdirectories (e.g., `posts/my-post/index.md`)
@@ -95,7 +101,9 @@ npm run format           # Format all files with Prettier
   ```
 
 ### Custom Markdown Features
+
 The blog uses several custom remark/rehype plugins:
+
 - **Admonitions** (`remark-admonitions`): Block-style callouts using `:::` syntax
 - **GitHub Cards** (`remark-github-card`): Embed GitHub repository cards
 - **Emoji** (`remark-gemoji`): Support for `:emoji:` shortcodes
@@ -106,6 +114,7 @@ The blog uses several custom remark/rehype plugins:
 ## Configuration Files
 
 ### Site Configuration (`src/site.config.ts`)
+
 - Site metadata (title, description, author, URL)
 - Navigation links
 - Theme configuration (light/dark mode with Catppuccin themes)
@@ -114,6 +123,7 @@ The blog uses several custom remark/rehype plugins:
 - Pagination settings
 
 ### Astro Configuration (`astro.config.mjs`)
+
 - Markdown/MDX processing plugins
 - Tailwind CSS integration via Vite
 - Sitemap generation
@@ -121,6 +131,7 @@ The blog uses several custom remark/rehype plugins:
 - URL redirects for legacy routes
 
 ### TypeScript Configuration (`tsconfig.json`)
+
 - Path aliases:
   - `@components/*` → `src/components/*`
   - `@layouts/*` → `src/layouts/*`
@@ -131,6 +142,7 @@ The blog uses several custom remark/rehype plugins:
 ## Deployment & CI/CD
 
 ### GitHub Actions Workflow (`.github/workflows/astro.yml`)
+
 - Triggers on push to `main` branch
 - Uses Node.js 20
 - Runs `npm ci` (clean install)
@@ -139,22 +151,26 @@ The blog uses several custom remark/rehype plugins:
 - **Note:** Use `npm ci` in CI environments, not `npm install`
 
 ### Deployment URL
+
 - Production: https://eheidi.dev (via GitHub Pages)
 
 ## Code Style & Best Practices
 
 ### Formatting
+
 - Use Prettier for all code formatting
 - Run `npm run format` before committing changes
 - Prettier configuration in `prettier.config.js`
 - Uses `prettier-plugin-astro` for Astro files
 
 ### TypeScript
+
 - Strict mode enabled (`extends: "astro/tsconfigs/strict"`)
 - Use path aliases for imports
 - Enable `verbatimModuleSyntax` for consistency
 
 ### Component Development
+
 - Astro components use `.astro` extension
 - React components are supported (JSX configured in tsconfig)
 - Use Tailwind CSS for styling
@@ -163,6 +179,7 @@ The blog uses several custom remark/rehype plugins:
 ## Common Tasks
 
 ### Adding a New Blog Post
+
 1. Create a new `.md` or `.mdx` file in `src/content/posts/`
 2. Add required frontmatter (title, published date)
 3. Write content using Markdown/MDX
@@ -170,14 +187,17 @@ The blog uses several custom remark/rehype plugins:
 5. Format with `npm run format`
 
 ### Modifying Site Configuration
+
 - Edit `src/site.config.ts` for site-wide settings
 - Changes require server restart in dev mode
 
 ### Adding/Modifying URL Redirects
+
 - Edit the `redirects` object in `astro.config.mjs`
 - Format: `"/old-path": "/new-path"`
 
 ### Working with Plugins
+
 - Custom plugins are in `src/plugins/`
 - Plugins are registered in `astro.config.mjs`
 - Follow the remark/rehype plugin API
@@ -185,6 +205,7 @@ The blog uses several custom remark/rehype plugins:
 ## Validation Steps
 
 Before finalizing changes:
+
 1. Run `npm install` to ensure dependencies are current
 2. Run `npm run build` to verify production build succeeds
 3. Check that Pagefind index builds without errors (included in build)
@@ -195,17 +216,20 @@ Before finalizing changes:
 ## Troubleshooting
 
 ### Build Failures
+
 - Ensure Node.js version is 20 or higher
 - Run `npm install` to update dependencies
 - Check that all frontmatter in posts matches the schema
 - Verify no TypeScript errors
 
 ### Pagefind Issues
+
 - Pagefind runs after the Astro build via `postbuild` script
 - It requires the `dist/` directory to exist
 - If search fails, ensure `npm run build` completed successfully
 
 ### Dev Server Issues
+
 - Clear the `.astro` cache directory if experiencing issues
 - Restart the dev server after modifying config files
 
