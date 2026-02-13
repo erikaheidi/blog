@@ -1,7 +1,7 @@
 ---
-title: "FreeCAD Tutorial: Design a Fully Constrained Heart"
+title: "FreeCAD Tutorial: Designing a Fully Constrained Heart"
 published: 2026-02-13
-description: "Learn how to design a fully constrained 3D heart on FreeCAD using the Part Design and Sketcher workbenches, perfect for Valentine's Day!"
+description: "Learn an easy way to design a fully constrained 3D heart on FreeCAD using the Part Design and Sketcher workbenches, perfect for Valentine's Day!"
 tags: [ '3d-printing', 'tutorial', 'freecad' ]
 ---
 
