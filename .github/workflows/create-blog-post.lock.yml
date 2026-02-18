@@ -23,7 +23,7 @@
 #
 # Automatically create a blog post PR from issues labeled with 'content-todo'
 #
-# gh-aw-metadata: {"schema_version":"v1","frontmatter_hash":"3e12239385fadb4fdd0adc6673937f24fb14b46d7dd4530741cf9bc9f991c5cb"}
+# gh-aw-metadata: {"schema_version":"v1","frontmatter_hash":"6dd23b1013360d9b5ac05b41f6b5803bfab95c1c3985381f5468fbf9a443b49d"}
 
 name: "Blog Post Creator"
 "on":
