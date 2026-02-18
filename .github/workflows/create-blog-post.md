@@ -54,7 +54,13 @@ When an issue is labeled with "content-todo", you will:
      ```
    - **IMPORTANT**: Include the full content extracted from the code block in the issue body below the frontmatter
 
-6. **Create a pull request**:
+6. **Commit the changes**:
+   - **CRITICAL**: After creating the blog post file, you MUST use the `report_progress` tool to commit and push the changes
+   - Use a descriptive commit message like "Add new blog post: [title]"
+   - The `report_progress` tool will automatically stage, commit, and push your changes to the PR branch
+   - **DO NOT use git commands directly** - the `report_progress` tool is required for the changes to be visible to the `create-pull-request` safe output
+
+7. **Create a pull request**:
    - Use the `create-pull-request` safe output to create a PR
    - Title: "New blog post: [title]"
    - Body should include:
@@ -64,7 +70,7 @@ When an issue is labeled with "content-todo", you will:
    - Base branch: `main`
    - Head branch: `blog-post/<url-friendly-slug>`
 
-7. **Comment on the issue**:
+8. **Comment on the issue**:
    - Use the `add-comment` safe output to add a comment to the original issue
    - Include a link to the PR
    - Confirm the metadata that was generated
