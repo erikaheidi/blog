@@ -27,7 +27,7 @@ When an issue is labeled with "content-todo", you will:
 
 1. **Verify the trigger**: Check if the issue has the "content-todo" label. If it doesn't, use the `noop` safe output to indicate no action is needed.
 
-2. **Extract content from the issue**: Read the issue body carefully. The issue body contains the raw text content of the blog post that should be included in the markdown file.
+2. **Extract content from the issue**: Read the issue body carefully. The issue body will contain the raw text content of the blog post inside a code block (enclosed in triple backticks: ``` ```). Extract the content from inside the code block to use as the blog post body.
 
 3. **Analyze existing tags dynamically**: Use GitHub tools to search for existing blog posts in `src/content/posts/` directory and compile a list of all tags currently used across the blog. 
    - Search for markdown files (`.md` and `.mdx`) in the posts directory
@@ -52,7 +52,7 @@ When an issue is labeled with "content-todo", you will:
      draft: false
      ---
      ```
-   - **IMPORTANT**: Include the full content from the issue body below the frontmatter
+   - **IMPORTANT**: Include the full content extracted from the code block in the issue body below the frontmatter
 
 6. **Create a pull request**:
    - Use the `create-pull-request` safe output to create a PR
@@ -77,16 +77,28 @@ When an issue is labeled with "content-todo", you will:
 - **SEO best practices**:
   - Title: Clear, descriptive, includes keywords, 50-60 characters
   - Description: Compelling, includes call-to-action or benefit, 150-160 characters
-- **Include content**: The markdown file body should contain the full content from the issue body
+- **Include content**: The markdown file body should contain the full content extracted from the code block in the issue body
+- **Code block extraction**: The issue body will contain content inside triple backticks (``` ```). Extract only the content from inside the code block.
 - **Date format**: Use YYYY-MM-DD format for the published date (e.g., 2026-02-18)
 - **File naming**: Use lowercase with hyphens (e.g., `introduction-to-docker.md`)
 - **Dynamic tag compilation**: Always scan the posts directory at runtime to get the current tag list
 
 ## Example Output
 
-For an issue with content about Docker basics:
+For an issue with content provided in a code block:
 
-**File**: `src/content/posts/docker-fundamentals.md`
+**Issue Body:**
+````
+```
+Docker is a powerful platform that enables developers to build, ship, and run applications in containers. This guide will walk you through the fundamental concepts of Docker and help you get started with containerization.
+
+## What is Docker?
+
+Docker is a containerization platform that packages your application and all its dependencies together in the form of containers...
+```
+````
+
+**Generated File**: `src/content/posts/docker-fundamentals.md`
 ```markdown
 ---
 title: 'Docker Fundamentals: Getting Started with Containers'
@@ -102,10 +114,10 @@ Docker is a powerful platform that enables developers to build, ship, and run ap
 
 Docker is a containerization platform that packages your application and all its dependencies together in the form of containers...
 
-(rest of the content from the issue body)
+(rest of the content from inside the code block)
 ```
 
-Note: The body contains the full content from the issue.
+Note: The body contains the full content extracted from the code block in the issue.
 
 ## Safe Outputs
 

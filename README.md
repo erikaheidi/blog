@@ -7,10 +7,15 @@ This repository includes a GitHub Agentic Workflow that automatically creates pu
 
 ### How to Use
 
-1. **Create a new issue** with the raw text content of your blog post in the issue body
+1. **Create a new issue** with your blog post content inside a code block (using triple backticks):
+   ````
+   ```
+   Your blog post content here...
+   ```
+   ````
 2. **Add the `content-todo` label** to the issue
 3. The workflow will automatically:
-   - Extract the content from the issue body
+   - Extract the content from the code block in the issue body
    - Dynamically scan existing posts to compile the current list of tags
    - Generate an SEO-friendly title and description based on the content
    - Select up to 3 appropriate tags from existing blog tags
