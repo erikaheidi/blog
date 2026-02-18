@@ -7,38 +7,19 @@ This repository includes a GitHub Agentic Workflow that automatically creates pu
 
 ### How to Use
 
-1. **Create a new issue** with details about the blog post you want to create
+1. **Create a new issue** with the raw text content of your blog post in the issue body
 2. **Add the `content-todo` label** to the issue
 3. The workflow will automatically:
-   - Generate an SEO-friendly title and description
+   - Extract the content from the issue body
+   - Dynamically scan existing posts to compile the current list of tags
+   - Generate an SEO-friendly title and description based on the content
    - Select up to 3 appropriate tags from existing blog tags
-   - Create a new markdown file with the frontmatter
+   - Create a new markdown file with frontmatter and the content from the issue
    - Open a pull request with the new blog post
    - Comment on the issue with a link to the PR
 
-4. **Add your content** to the blog post file in the PR
-5. **Review and merge** the PR when ready
+4. **Review and merge** the PR when ready
 
-### Existing Tags
+### Tags
 
-The workflow uses the following existing tags (max 3 per post):
-- 3d-printing
-- ai
-- beginners
-- career
-- containers
-- copilot
-- development
-- freecad
-- games
-- laravel
-- linux
-- llms
-- minecraft
-- openscad
-- php
-- productivity
-- raspberry
-- technical-writing
-- tools
-- tutorial
+The workflow dynamically compiles tags from existing blog posts at runtime, ensuring it always uses the current set of tags. It will select up to 3 tags that best match your content.
