@@ -40,7 +40,7 @@ When an issue is labeled with "youtube-todo", you will:
 
 4. **Generate the raw blog post content**:
    
-   Generate ONLY the raw blog post content without any frontmatter or metadata. The content should follow this structure, using the `posts/freecad-heart-tutorial/index.md` as a reference for format:
+   Generate ONLY the raw blog post content without any frontmatter or metadata. The content should follow this structure, using the body content (NOT the frontmatter) of `posts/freecad-heart-tutorial/index.md` as a reference for the content format:
    
    **Part 1: Introduction** (1-2 paragraphs)
    - Write a concise, engaging introduction to the topic
@@ -69,7 +69,13 @@ When an issue is labeled with "youtube-todo", you will:
    - Optionally suggest next steps or related content
    - Keep it brief and encouraging
    
-   **IMPORTANT**: Do NOT generate any frontmatter, metadata, title, description, tags, or published date. Only generate the raw content (introduction, video embed, steps, and conclusion).
+   **CRITICAL - NO FRONTMATTER**: 
+   - Do NOT include any YAML frontmatter at the beginning
+   - Do NOT include title, description, tags, or published date
+   - Do NOT include the `---` delimiters
+   - Start directly with the introduction paragraph
+   - The "content-todo" workflow will add all frontmatter metadata automatically
+   - Only generate: introduction + video embed + step-by-step instructions + conclusion
 
 5. **Create a review issue**:
    - Use the `create-issue` safe output to create a new issue
@@ -138,6 +144,27 @@ With a body containing:
   - Step-by-step instructions organized with H2/H3 headers
   - Brief conclusion
 - Reference to the original issue
+
+**Example of the raw content (inside the code block):**
+```
+Valentine's Day is just around the corner, and what better way to celebrate than learning how to design a heart on FreeCAD? In this tutorial, you'll learn...
+
+<iframe width="100%" height="540" src="https://www.youtube.com/embed/V-9S-ViKqs8?si=..." title="YouTube video player"...></iframe>
+
+## Step 1: Create a New Project
+
+First, make sure you are in the Part Design workbench...
+
+## Step 2: Create the Top Arcs
+
+Now we'll create the top part of the heart...
+
+## Conclusion
+
+Creating a fully constrained heart on FreeCAD is a great exercise...
+```
+
+**IMPORTANT**: Notice the example above starts directly with the introduction text - NO frontmatter, NO `---` delimiters, NO title/tags/description fields at the top.
 
 ## Safe Outputs
 
