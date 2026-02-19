@@ -1,9 +1,9 @@
 ---
 description: Automatically create a blog post PR from issues labeled with 'content-todo'
 on:
+  roles: all
   issues:
     types: [labeled]
-roles: all
 permissions:
   contents: read
   issues: read
