@@ -38,9 +38,9 @@ When an issue is labeled with "youtube-todo", you will:
    - Identify the step-by-step process or instructions demonstrated in the video
    - Note any important tips, warnings, or best practices mentioned
 
-4. **Generate the blog post structure**:
+4. **Generate the raw blog post content**:
    
-   The blog post should follow this structure, using the `posts/freecad-heart-tutorial/index.md` as a reference for format:
+   Generate ONLY the raw blog post content without any frontmatter or metadata. The content should follow this structure, using the `posts/freecad-heart-tutorial/index.md` as a reference for format:
    
    **Part 1: Introduction** (1-2 paragraphs)
    - Write a concise, engaging introduction to the topic
@@ -68,53 +68,29 @@ When an issue is labeled with "youtube-todo", you will:
    - Write a concise conclusion summarizing what was learned
    - Optionally suggest next steps or related content
    - Keep it brief and encouraging
-
-5. **Create metadata for the blog post**:
-   - **Title**: Create a clear, descriptive title (e.g., "FreeCAD Tutorial: Designing a Fully Constrained Heart")
-   - **Description**: Write a compelling 150-160 character description based on the content
-   - **Tags**: Analyze the content and select up to 3 appropriate tags. Common tags include: 'tutorial', '3d-printing', 'freecad', 'docker', 'linux', 'gaming', etc. Choose tags that best match the content.
-   - **Published date**: Use the current date in YYYY-MM-DD format
-   - **Draft status**: Set to `false`
-
-6. **Format the complete blog post**:
    
-   Create the full blog post content with this exact frontmatter structure:
-   
-   ```yaml
-   ---
-   title: '<descriptive title>'
-   published: <YYYY-MM-DD>
-   description: '<SEO description 150-160 chars>'
-   tags: [ '<tag1>', '<tag2>', '<tag3>' ]
-   draft: false
-   ---
-   ```
-   
-   Followed by:
-   - Introduction section
-   - Video embed code
-   - Step-by-step instructions with H2/H3 headers
-   - Conclusion section
+   **IMPORTANT**: Do NOT generate any frontmatter, metadata, title, description, tags, or published date. Only generate the raw content (introduction, video embed, steps, and conclusion).
 
-7. **Create a review issue**:
+5. **Create a review issue**:
    - Use the `create-issue` safe output to create a new issue
-   - Title: `Blog TODO: [TITLE]` where [TITLE] is the blog post title you generated
+   - Title: `YouTube Tutorial: [Brief Topic Description]` - create a short descriptive title for the issue (this is NOT the blog post title, just for issue tracking)
    - Body should contain:
-     - A brief introduction line explaining this is a generated blog post from a YouTube video
+     - A brief introduction explaining this is generated content from a YouTube video tutorial
      - The complete raw blog post content wrapped in a markdown code block (use triple backticks)
+     - Instructions to add the "content-todo" label to trigger the blog post creator workflow
      - A mention of the repository owner: `@erikaheidi` for review
      - A reference back to the original issue that triggered this workflow
    
    Example issue body format:
    ```
-   This is an automatically generated blog post draft based on a YouTube video tutorial.
+   This is automatically generated blog post content from a YouTube video tutorial.
    
-   @erikaheidi please review the content below and create the blog post file manually when ready.
+   @erikaheidi please review the content below. When ready, add the **"content-todo"** label to this issue to automatically trigger the blog post creator workflow, which will generate frontmatter and create a PR.
    
-   **Generated blog post content:**
+   **Raw blog post content:**
    
-   ````markdown
-   [FULL BLOG POST CONTENT HERE INCLUDING FRONTMATTER]
+   ````
+   [RAW BLOG POST CONTENT HERE - NO FRONTMATTER, JUST CONTENT]
    ````
    
    ---
@@ -135,9 +111,11 @@ When an issue is labeled with "youtube-todo", you will:
 - **Clear structure**: The step-by-step instructions should be well-organized with proper headers
 - **Actionable content**: Instructions should be clear enough that someone could follow them without watching the video
 - **Match the video**: Ensure the written instructions accurately reflect what's shown in the video based on the transcript
-- **Complete content**: The issue body should contain the FULL blog post ready to be copied into a markdown file
+- **RAW CONTENT ONLY**: Do NOT generate any frontmatter, metadata, title, description, tags, or published date. The "content-todo" workflow will handle all metadata generation.
+- **Complete raw content**: The issue body should contain the FULL raw blog post content (intro, video embed, steps, conclusion) in a code block
 - **Tag the owner**: Always include `@erikaheidi` in the issue body so she gets notified
 - **Reference original issue**: Include a link or reference to the original issue at the bottom
+- **Next step instructions**: Include clear instructions to add the "content-todo" label to trigger the blog post creator workflow
 
 ## Example Output
 
@@ -147,18 +125,32 @@ For an issue with:
 
 You would create an issue titled:
 ```
-Blog TODO: FreeCAD Tutorial: Designing a Fully Constrained Heart
+YouTube Tutorial: FreeCAD Heart Design
 ```
 
-With a body containing the complete blog post content in a code block, including:
-- Frontmatter with title, date, description, and tags
-- Engaging introduction
-- YouTube embed with the correct video ID
-- Step-by-step instructions organized with headers
-- Brief conclusion
+With a body containing:
+- Brief introduction about the generated content
+- Instructions to add the "content-todo" label when ready
+- The complete RAW blog post content in a code block (WITHOUT any frontmatter)
+- The raw content should include:
+  - Engaging introduction (1-2 paragraphs)
+  - YouTube embed iframe with the correct video ID
+  - Step-by-step instructions organized with H2/H3 headers
+  - Brief conclusion
+- Reference to the original issue
 
 ## Safe Outputs
 
-- **If the issue has the "youtube-todo" label AND is authored by erikaheidi**: Extract content and create a new issue with the blog post draft
+- **If the issue has the "youtube-todo" label AND is authored by erikaheidi**: Extract content and create a new issue with the raw blog post content (no frontmatter)
 - **If the issue is not authored by erikaheidi**: Use `noop` with message "Only repository owner can create YouTube-based blog posts via this workflow"
 - **If there was nothing to be done**: Use `noop` with message "Issue does not have 'youtube-todo' label, no action taken"
+
+## Workflow Integration
+
+This workflow creates an issue with raw blog post content. To complete the blog post creation:
+1. Review the generated content in the created issue
+2. When satisfied, add the **"content-todo"** label to that issue
+3. The "Blog Post Creator" workflow will automatically:
+   - Generate frontmatter (title, description, tags, date)
+   - Create the markdown file in `src/content/posts/`
+   - Open a pull request with the complete blog post
