@@ -4,6 +4,7 @@ on:
   roles: all
   issues:
     types: [labeled]
+    names: content-todo
 permissions:
   contents: read
   issues: read
