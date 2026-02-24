@@ -41,6 +41,7 @@ run-name: "Blog Post Creator"
 
 jobs:
   activation:
+    if: github.event.label.name == 'content-todo'
     runs-on: ubuntu-slim
     permissions:
       contents: read
