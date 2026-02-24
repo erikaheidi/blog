@@ -4,6 +4,7 @@ on:
   roles: all
   issues:
     types: [labeled]
+    names: [youtube-todo]
 permissions:
   contents: read
   issues: read
