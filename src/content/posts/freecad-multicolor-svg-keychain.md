@@ -59,7 +59,7 @@ For the FreeCAD logo keychain, the layer plan is:
 
 > **Important:** Work with connected parts together. If two paths are adjacent (touching), convert and pad them in the same session to avoid errors in FreeCAD.
 
-## Step 5: Convert Paths to Sketches and Create Bodies
+## Step 5: Convert Paths to Sketches and Combine them in a Body
 
 For each path, you'll need to convert it from a draft object into a proper sketch, then place it inside a body and pad it.
 
@@ -75,8 +75,8 @@ For each path, you'll need to convert it from a draft object into a proper sketc
 
 ### 5.3 Create a Body and Add the Sketch
 
-1. Create a **new Body** (Part Design workbench → Create body)
-2. **Move the sketch** into the newly created body (drag it in the model tree)
+1. Create a **new Body** if you don't have one yet (Part Design workbench → Create body)
+2. **Move the sketch** into the active body (drag it in the model tree)
 
 ### 5.4 Pad the Sketch
 
@@ -86,7 +86,7 @@ For each path, you'll need to convert it from a draft object into a proper sketc
 4. Click **OK**
 5. Hide the original path to keep the workspace clean
 
-Repeat this process for each path, using the heights defined in your layer plan:
+Repeat this process for each path using the same active body, with the heights defined in your layer plan:
 
 - **Cog path** → 2 mm
 - **Base path** → 4 mm
@@ -105,7 +105,7 @@ To turn the model into a keychain, add a small hole:
 
 ## Step 7: Export as STL
 
-1. Select **all bodies** in the model tree
+1. Select the object in the model tree
 2. Go to **File → Export**
 3. Choose **STL Mesh** format
 4. Save the file
